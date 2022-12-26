@@ -1,0 +1,11 @@
+part#2
+docker-compose build
+docker-compose run --rm app django-admin startproject core .
+docker-compose up
+
+part#3
+docker-compose build
+docker-compose run --rm app django-admin startproject core .
+docker-compose up
+docker exec -it django_app /bin/bash   #in new terminal 
+then run python manage.py migrate command
